@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bdA5XgcCcCEcFEGU9YmyYAq1oYvWGeNGbG/8ha7qBAc8NCpQtEFCxSDK/NKSm8LwQ6GeH69YwuPFetfuyOVwvw==",
+  "dgSpecHash": "6gvHJgYeXZM=",
   "success": true,
   "projectFilePath": "/Users/thobekatshabalala/Desktop/Code/CalculatorAssessment/calculatorTask/CrossPlatformCalculator/CalculatorTask/CalculatorTask.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,10 @@
     "/Users/thobekatshabalala/.nuget/packages/system.diagnostics.diagnosticsource/8.0.1/system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
     "/Users/thobekatshabalala/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/Users/thobekatshabalala/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/Users/thobekatshabalala/.nuget/packages/tmds.dbus.protocol/0.21.2/tmds.dbus.protocol.0.21.2.nupkg.sha512"
+    "/Users/thobekatshabalala/.nuget/packages/tmds.dbus.protocol/0.21.2/tmds.dbus.protocol.0.21.2.nupkg.sha512",
+    "/Users/thobekatshabalala/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/thobekatshabalala/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/thobekatshabalala/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.36/microsoft.netcore.app.host.osx-arm64.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }
