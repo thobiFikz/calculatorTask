@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CalculatorTask.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CalculatorTask.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="CalculatorTask">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <StackPanel Margin="20">
+        <TextBox Text="{Binding Display}" FontSize="32" HorizontalAlignment="Stretch" Margin="0,0,0,20" IsReadOnly="True"/>
+        <UniformGrid Columns="4" Rows="5" HorizontalAlignment="Stretch">
+            <!-- Digit buttons -->
+            <Button Content="7" Command="{Binding DigitCommand}" CommandParameter="7" FontSize="24"/>
+            <Button Content="8" Command="{Binding DigitCommand}" CommandParameter="8" FontSize="24"/>
+            <Button Content="9" Command="{Binding DigitCommand}" CommandParameter="9" FontSize="24"/>
+            <Button Content="÷" Command="{Binding OperationCommand}" CommandParameter="Divide" FontSize="24"/>
+
+            <Button Content="4" Command="{Binding DigitCommand}" CommandParameter="4" FontSize="24"/>
+            <Button Content="5" Command="{Binding DigitCommand}" CommandParameter="5" FontSize="24"/>
+            <Button Content="6" Command="{Binding DigitCommand}" CommandParameter="6" FontSize="24"/>
+            <Button Content="×" Command="{Binding OperationCommand}" CommandParameter="Multiply" FontSize="24"/>
+
+            <Button Content="1" Command="{Binding DigitCommand}" CommandParameter="1" FontSize="24"/>
+            <Button Content="2" Command="{Binding DigitCommand}" CommandParameter="2" FontSize="24"/>
+            <Button Content="3" Command="{Binding DigitCommand}" CommandParameter="3" FontSize="24"/>
+            <Button Content="-" Command="{Binding OperationCommand}" CommandParameter="Subtract" FontSize="24"/>
+
+            <Button Content="0" Command="{Binding DigitCommand}" CommandParameter="0" FontSize="24"/>
+            <Button Content="C" Command="{Binding ClearCommand}" FontSize="24"/>
+            <Button Content="=" Command="{Binding EqualsCommand}" FontSize="24"/>
+            <Button Content="+" Command="{Binding OperationCommand}" CommandParameter="Add" FontSize="24"/>
+        </UniformGrid>
+    </StackPanel>
+
+</Window>
